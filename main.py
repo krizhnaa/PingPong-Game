@@ -27,6 +27,7 @@ while game_is_on:
     time.sleep(0.1)
     ball.move()
     if ball.distance(x=ball.xcor(), y=275) < 15:
+        ball.bounce()
         print("Touched the wall")
 
 screen.exitonclick()
