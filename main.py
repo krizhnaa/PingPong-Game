@@ -26,7 +26,7 @@ while game_is_on:
     screen.update()
     time.sleep(0.1)
     ball.move()
-    if ball.distance(x=ball.xcor(), y=300) < 15 or ball.distance(x=ball.xcor(), y=-300) < 15:
+    if ball.distance(x=ball.xcor(), y=280) < 15 or ball.distance(x=ball.xcor(), y=-280) < 15:
         ball.bounce()
         print("Touched the wall")
 
