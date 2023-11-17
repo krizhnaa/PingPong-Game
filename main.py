@@ -33,4 +33,8 @@ while game_is_on:
         ball.h_bounce()
         print("Made contact")
 
+    if ball.xcor() > 380 or ball.xcor() < -380:
+        ball.refresh()
+
+
 screen.exitonclick()

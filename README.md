@@ -6,3 +6,4 @@
 # <3> Creating the ball class
 # <4> Detecting collision of ball with the upper ball
 # <5> Detecting collision with the paddle
+# <6> If the ball goes beyond the boundary, the ball resets to the center.
