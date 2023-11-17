@@ -33,9 +33,13 @@ while game_is_on:
 
     if ball.distance(r_paddle) < 50 and ball.xcor() > 320 or ball.distance(l_paddle) < 50 and ball.xcor() < -320:
         ball.h_bounce()
-        print("Made contact")
 
-    if ball.xcor() > 380 or ball.xcor() < -380:
+    if ball.xcor() > 380:
+        score.l_scored()
+        ball.refresh()
+
+    if ball.xcor() < -380:
+        score.r_scored()
         ball.refresh()
 
 
