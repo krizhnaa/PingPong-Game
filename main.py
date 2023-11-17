@@ -27,9 +27,10 @@ while game_is_on:
     time.sleep(0.1)
     ball.move()
     if ball.distance(x=ball.xcor(), y=280) < 15 or ball.distance(x=ball.xcor(), y=-280) < 15:
-        ball.bounce()
+        ball.v_bounce()
 
-    if ball.distance(r_paddle) < 15:
-        ball.bounce()
+    if ball.distance(r_paddle) < 50 and ball.xcor() > 340:
+        ball.h_bounce()
+        print("Made contact")
 
 screen.exitonclick()
