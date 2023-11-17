@@ -8,3 +8,4 @@
 # <5> Detecting collision with the paddle
 # <6> If the ball goes beyond the boundary, the ball resets to the center.
 # <7> Creating a Scoreboard
+# <8> Increasing the speed of the ball, if scored

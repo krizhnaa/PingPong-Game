@@ -21,8 +21,9 @@ class Ball(Turtle):
         self.y_move *= -1
 
     def h_bounce(self):
-        self.x_move *= -1
+        self.x_move *= -1.5
 
     def refresh(self):
         self.goto(0, 0)
+        self.x_move = 10
         self.h_bounce()
