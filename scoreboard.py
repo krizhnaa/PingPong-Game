@@ -9,24 +9,21 @@ class Score(Turtle):
         self.hideturtle()
         self.l_score = 0
         self.r_score = 0
-        self.l_card()
-        self.r_card()
+        self.card()
 
-    def r_card(self):
-        self.goto(100, 175)
-        self.write(self.r_score, align='center', font=('Courier', 80, 'normal'))
-
-    def l_card(self):
+    def card(self):
         self.goto(-100, 175)
         self.write(self.l_score, align='center', font=('Courier', 80, 'normal'))
+        self.goto(100, 175)
+        self.write(self.r_score, align='center', font=('Courier', 80, 'normal'))
 
     def r_scored(self):
         self.r_score += 1
         self.clear()
-        self.r_card()
+        self.card()
 
     def l_scored(self):
         self.l_score += 1
         self.clear()
-        self.l_card()
+        self.card()
 
