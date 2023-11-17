@@ -29,7 +29,7 @@ while game_is_on:
     if ball.distance(x=ball.xcor(), y=280) < 15 or ball.distance(x=ball.xcor(), y=-280) < 15:
         ball.v_bounce()
 
-    if ball.distance(r_paddle) < 50 and ball.xcor() > 340:
+    if ball.distance(r_paddle) < 50 and ball.xcor() > 320 or ball.distance(l_paddle) < 50 and ball.xcor() < -320:
         ball.h_bounce()
         print("Made contact")
 
