@@ -5,3 +5,4 @@
 # <3> Creating a second paddle which is a computer player
 # <3> Creating the ball class
 # <4> Detecting collision of ball with the upper ball
+# <5> Detecting collision with the paddle

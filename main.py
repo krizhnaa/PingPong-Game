@@ -28,6 +28,8 @@ while game_is_on:
     ball.move()
     if ball.distance(x=ball.xcor(), y=280) < 15 or ball.distance(x=ball.xcor(), y=-280) < 15:
         ball.bounce()
-        print("Touched the wall")
+
+    if ball.distance(r_paddle) < 15:
+        ball.bounce()
 
 screen.exitonclick()
